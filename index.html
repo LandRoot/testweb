@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LandRoot 음악방</title>
+<style>
+#top{
+	background-color:#DDDDDD;
+	text-align:center;
+	font-family:굴림, 돋움, serif;
+	font-size:24px;
+	padding:20px;
+}
+#normal{
+	background-color:#EEEEEE;
+	text-align:center;
+	min-height:100vh;
+}
+#text0-1{
+	font-size:48px;
+	background-color:#CCCCCC;
+	text-align:center;
+	font-family:굴림, 돋움, serif;
+}
+#text0-2{
+	cursor: pointer;
+	line-height: normal;
+	font-size: 36px;
+	text-align:center;
+	font-family:굴림, 돋움, serif;
+}
+#img{
+	border:2px solid gray;
+	text-align:center;
+}
+</style>
+<script>
+var toggles=new Array(3);
+toggles[0]="text1-1"
+toggles[1]="text1-2"
+toggles[2]="text1-3"
+function show1(x){
+	document.getElementById(toggles[x]).style.display=(document.getElementById(toggles[x]).style.display=='none')?'block':'none';
+}
+</script>
+</head>
+<body>
+	<div id="top">
+		<span>
+			<a href="./index.html"><strong>간단 소개</strong></a> | <a href="./musics.html">음악 듣기</a> | <a href="./contact.html">연락처</a>
+		</span>
+	</div>
+	<div id="normal">
+		<span id="text0-1">> LandRoot 간단 소개</span>
+		<div onclick="show1(0)">
+		<h2 id="text0-2">- LandRoot란?</h2>
+			<div style="font-size:24px; font-family:나눔고딕, 굴림, serif; DISPLAY: none" id="text1-1">
+				<a>LandRoot는 제 <strong>활동명의</strong>입니다.<br>
+				본명을 따서 지었으며, <strong>랜드루트</strong>라고 읽습니다.<br><br>
+				제가 하고 있는 부업 중 두 가지는 프리랜서 <strong>작곡가</strong>이자 <strong>일러스트레이터</strong>입니다.<br>
+				음악과 음악에 쓸 커버이미지를 <strong>직접</strong> 만듭니다.</br>
+				주로 <strong>게임음악</strong>을 만들며 <strong>다양한 장르</strong>를 시도하고 있습니다.<br>
+				다양한 공모전과 게임개발에 참여하면서 실력을 쌓고 항상 연습하는 중입니다.
+				</a>
+			</div>
+		</div>
+		<div onclick="show1(1)">
+		<h2 id="text0-2">- 작업환경 및 홈페이지는?</h2>
+			<div style="font-size:24px; font-family:나눔고딕, 굴림, serif; DISPLAY: none" id="text1-2">
+				<a>작곡 작업은 <strong>FL Studio 20</strong>에서, 일러스트레이팅 작업은 <strong>Clip Studio 아이패드 버전</strong>에서 진행중입니다.<br>
+				또한, 기계 보컬인 Yamaha사의 <strong>한국어 보컬로이드 유니(UNI)</strong>를 다룰 수 있습니다.<br>
+				음악은 주로 <strong>유튜브</strong>와 <strong>사운드클라우드</strong>에서 업로드하고 있습니다.
+				</a><br>
+				<a><img src="./images/proof2.png"></a>
+			</div>
+		</div>
+		<div onclick="show1(2)">
+		<h2 id="text0-2">- 활동 경력은?</h2>
+			<div style="font-size:24px; font-family:나눔고딕, 굴림, serif; DISPLAY: none" id="text1-3">
+				<a>2018년 네이버 그라폴리오의 <strong>힐링음악 작곡 공모전 #2</strong>에서 배너 음악으로 선정됐습니다.<br>
+				<strong>2019 대한민국 창의력 공모대전</strong>에서 특선으로 입상했습니다.<br>
+				그 외에는 아직 특별한 경력은 없지만 기회가 생길 때마다 쌓으려고 노력중입니다 :D<br><br>
+				(이미지를 누르면 해당 음원 페이지로 이동합니다.)
+				</a><br>
+				<a href="https://grafolio.naver.com/works/521801"><img src="./images/proof.png"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
